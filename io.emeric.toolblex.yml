@@ -255,3 +255,7 @@ modules:
       - type: archive
         url: https://github.com/emericg/toolBLEx/archive/refs/tags/v0.6.tar.gz
         sha256: 2e12bb4a04eec47748d7a1caca783ed7c3648e068e5c9588e9fd485c40143c0c
+      - type: file
+        path: toolblex.appdata.xml
+    post-install:
+      - mv -f toolblex.appdata.xml /app/share/appdata/toolblex.appdata.xml
