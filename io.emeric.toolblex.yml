@@ -1,6 +1,6 @@
 app-id: io.emeric.toolblex
 runtime: org.freedesktop.Platform
-runtime-version: '22.08'
+runtime-version: '23.08'
 sdk: org.freedesktop.Sdk
 command: toolblex
 
@@ -19,7 +19,6 @@ finish-args:
   # We need Bluetooth support
   - --allow=bluetooth
   - --system-talk-name=org.bluez
-  - --share=network
 
 cleanup:
   - /bin/__pypache__
@@ -253,8 +252,8 @@ modules:
     buildsystem: qmake
     sources:
       - type: archive
-        url: https://github.com/emericg/toolBLEx/archive/refs/tags/v0.7.tar.gz
-        sha256: 731da5eafc6dbc9b9650e7f892fa9fbf3d73b4518aa62e616f718fad655fa79b
+        url: https://github.com/emericg/toolBLEx/archive/refs/tags/v0.8.tar.gz
+        sha256: 0626c3e4d39cf045d3d1eef7611fb468781d82ec7477542ecb70c77c22a4ac50
       - type: file
         path: toolblex.appdata.xml
     post-install:
