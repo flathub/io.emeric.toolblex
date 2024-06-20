@@ -45,8 +45,8 @@ modules:
       - -DQT_BUILD_TESTS=OFF
     sources:
       - type: archive
-        url: https://download.qt.io/archive/qt/6.7/6.7.1/submodules/qtbase-everywhere-src-6.7.1.tar.xz
-        sha256: b7338da1bdccb4d861e714efffaa83f174dfe37e194916bfd7ec82279a6ace19
+        url: https://download.qt.io/archive/qt/6.7/6.7.2/submodules/qtbase-everywhere-src-6.7.2.tar.xz
+        sha256: c5f22a5e10fb162895ded7de0963328e7307611c688487b5d152c9ee64767599
         x-checker-data:
           type: anitya
           project-id: 7927
@@ -59,14 +59,13 @@ modules:
     buildsystem: cmake-ninja
     builddir: true
     config-opts:
-      - -DCMAKE_PREFIX_PATH=/app
       - -DCMAKE_BUILD_TYPE=RelWithDebInfo
       - -DQT_BUILD_EXAMPLES=OFF
       - -DQT_BUILD_TESTS=OFF
     sources:
       - type: archive
-        url: https://download.qt.io/archive/qt/6.7/6.7.1/submodules/qttools-everywhere-src-6.7.1.tar.xz
-        sha256: 0953cddf6248f3959279a10904892e8a98eb3e463d729a174b6fc47febd99824
+        url: https://download.qt.io/archive/qt/6.7/6.7.2/submodules/qttools-everywhere-src-6.7.2.tar.xz
+        sha256: 58e855ad1b2533094726c8a425766b63a04a0eede2ed85086860e54593aa4b2a
         x-checker-data:
           type: anitya
           project-id: 7927
@@ -77,12 +76,13 @@ modules:
     buildsystem: cmake-ninja
     builddir: true
     config-opts:
+      - -DCMAKE_BUILD_TYPE=RelWithDebInfo
       - -DQT_BUILD_EXAMPLES=OFF
       - -DQT_BUILD_TESTS=OFF
     sources:
       - type: archive
-        url: https://download.qt.io/archive/qt/6.7/6.7.1/submodules/qtshadertools-everywhere-src-6.7.1.tar.xz
-        sha256: e585e3a985b2e2bad8191a84489a04e69c3defc6022a8e746aad22a1f17910c2
+        url: https://download.qt.io/archive/qt/6.7/6.7.2/submodules/qtshadertools-everywhere-src-6.7.2.tar.xz
+        sha256: edfa34c0ac8c00fcaa949df1d8e7a77d89dadd6386e683ce6c3e3b117e2f7cc1
         x-checker-data:
           type: anitya
           project-id: 7927
@@ -93,14 +93,13 @@ modules:
     buildsystem: cmake-ninja
     builddir: true
     config-opts:
-      - -DCMAKE_PREFIX_PATH=/app
       - -DCMAKE_BUILD_TYPE=RelWithDebInfo
       - -DQT_BUILD_EXAMPLES=OFF
       - -DQT_BUILD_TESTS=OFF
     sources:
       - type: archive
-        url: https://download.qt.io/archive/qt/6.7/6.7.1/submodules/qtdeclarative-everywhere-src-6.7.1.tar.xz
-        sha256: 81135c96ed2f599385b8a68c57f4f438dad193c62f946f5b200a321558fd9f1c
+        url: https://download.qt.io/archive/qt/6.7/6.7.2/submodules/qtdeclarative-everywhere-src-6.7.2.tar.xz
+        sha256: 4c29cba1af8c42d425d8eb6e01bad24cb80f4b983d71eef566a0542dfdb9b999
         x-checker-data:
           type: anitya
           project-id: 7927
@@ -115,8 +114,8 @@ modules:
       - -DQT_BUILD_TESTS=OFF
     sources:
       - type: archive
-        url: https://download.qt.io/archive/qt/6.7/6.7.1/submodules/qtwayland-everywhere-src-6.7.1.tar.xz
-        sha256: 7ef176a8e701c90edd8e591dad36f83c30d623ef94439ff62cafcffd46a83d20
+        url: https://download.qt.io/archive/qt/6.7/6.7.2/submodules/qtwayland-everywhere-src-6.7.2.tar.xz
+        sha256: a2a057e1dd644bd44abb9990fecc194b2e25c2e0f39e81aa9fee4c1e5e2a8a5b
         x-checker-data:
           type: anitya
           project-id: 7927
@@ -133,8 +132,8 @@ modules:
       - -DQT_BUILD_TESTS=OFF
     sources:
       - type: archive
-        url: https://download.qt.io/archive/qt/6.7/6.7.1/submodules/qtsvg-everywhere-src-6.7.1.tar.xz
-        sha256: 3ed5b80f7228c41dd463b7a57284ed273d224d1c323c0dd78c5209635807cbce
+        url: https://download.qt.io/archive/qt/6.7/6.7.2/submodules/qtsvg-everywhere-src-6.7.2.tar.xz
+        sha256: fb0d1286a35be3583fee34aeb5843c94719e07193bdf1d4d8b0dc14009caef01
         x-checker-data:
           type: anitya
           project-id: 7927
@@ -149,8 +148,8 @@ modules:
       - -DQT_BUILD_TESTS=OFF
     sources:
       - type: archive
-        url: https://download.qt.io/archive/qt/6.7/6.7.1/submodules/qtconnectivity-everywhere-src-6.7.1.tar.xz
-        sha256: 70010afbe442bd41c9d4aad85d80fe0a8f2cbcf01cef3f3d88196e5520a73dcb
+        url: https://download.qt.io/archive/qt/6.7/6.7.2/submodules/qtconnectivity-everywhere-src-6.7.2.tar.xz
+        sha256: 8ed321b242f0e956473a295fa31670271f9b3acb797508644cb740f89f6c08e8
         x-checker-data:
           type: anitya
           project-id: 7927
@@ -165,34 +164,17 @@ modules:
       - -DQT_BUILD_TESTS=OFF
     sources:
       - type: archive
-        url: https://download.qt.io/archive/qt/6.7/6.7.1/submodules/qtcharts-everywhere-src-6.7.1.tar.xz
-        sha256: c236875ab3c812f0d59bad81a783095ae50932c7bea23cb81cd55437083d5d8c
+        url: https://download.qt.io/archive/qt/6.7/6.7.2/submodules/qtcharts-everywhere-src-6.7.2.tar.xz
+        sha256: 00f6a437458b7f2c4e81d748dbe2a077567a9e6ad8d8e3820b36c39dc5279bda
         x-checker-data:
           type: anitya
           project-id: 7927
           stable-only: true
           url-template: https://download.qt.io/archive/qt/$major.$minor/$version/submodules/qtcharts-everywhere-src-$version.tar.xz
 
-  - name: qt5compat
-    buildsystem: cmake-ninja
-    config-opts:
-      - -DCMAKE_BUILD_TYPE=RelWithDebInfo
-      - -DQT_BUILD_EXAMPLES=OFF
-      - -DQT_BUILD_TESTS=OFF
-    sources:
-      - type: archive
-        url: https://download.qt.io/archive/qt/6.7/6.7.1/submodules/qt5compat-everywhere-src-6.7.1.tar.xz
-        sha256: 41c4bbe419158fc170ee3ef3ecffead506e70802109deec036d86e4244086009
-        x-checker-data:
-          type: anitya
-          project-id: 7927
-          stable-only: true
-          url-template: https://download.qt.io/archive/qt/$major.$minor/$version/submodules/qt5compat-everywhere-src-$version.tar.xz
-
   - name: toolblex
     buildsystem: qmake
     sources:
       - type: archive
-        url: https://github.com/emericg/toolBLEx/archive/refs/tags/v0.11.tar.gz
-        sha256: 717d1e5badebb5df1c7c676f6bbdafcf37b2af3ccb5dfb0e4aa226cf5cfc1f9d
-
+        url: https://github.com/emericg/toolBLEx/archive/refs/tags/v0.12.tar.gz
+        sha256: 0f8cb39b53450982392ddbedda9335db3646e8471f1237c653f2d3d4b5ff1a4a
