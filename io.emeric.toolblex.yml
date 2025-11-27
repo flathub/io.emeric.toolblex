@@ -2,11 +2,11 @@ app-id: io.emeric.toolblex
 runtime: org.freedesktop.Platform
 runtime-version: '25.08'
 sdk: org.freedesktop.Sdk
-command: toolblex
 
-rename-desktop-file: toolblex.desktop
-rename-appdata-file: toolblex.appdata.xml
-rename-icon: toolblex
+command: toolBLEx
+rename-desktop-file: toolBLEx.desktop
+rename-appdata-file: toolBLEx.appdata.xml
+rename-icon: toolBLEx
 
 finish-args:
   # Our UI is GPU accelerated
@@ -37,12 +37,12 @@ cleanup:
   - '*.la'
 
 modules:
-  - name: qt
+  - name: Qt6
     buildsystem: cmake-ninja
     builddir: true
     config-opts:
       - -DBUILD_SHARED_LIBS=ON
-      - -DQT_BUILD_SUBMODULES=qtbase;qtdeclarative;qtconnectivity;qtcharts;qtshadertools;qtsvg;qtwayland
+      - -DQT_BUILD_SUBMODULES=qtbase;qtdeclarative;qttools;qtshadertools;qtwayland;qtsvg;qtconnectivity;qtcharts
       - -DQT_QPA_PLATFORMS=wayland;xcb
       - -DINPUT_openssl=linked
     sources:
@@ -56,9 +56,9 @@ modules:
     cleanup:
       - '*'
 
-  - name: toolblex
-    buildsystem: qmake
+  - name: toolBLEx
+    buildsystem: cmake-ninja
     sources:
       - type: archive
-        url: https://github.com/emericg/toolBLEx/archive/refs/tags/v0.13.tar.gz
-        sha256: 9f0395485dabf565d3d449514a33f891016eba69656ce4869595ed69c788105e
+        url: https://github.com/emericg/toolBLEx/archive/refs/tags/v0.14.1.tar.gz
+        sha256: 49bd4a8f861cb64ad9c7874ed359e35bcbbf45e394d017f098491bb181032d34
