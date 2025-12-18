@@ -54,7 +54,6 @@ modules:
       - /bin
       - /doc
       - /include
-      - /lib/debug
       - /lib/objects-Release
       - /libexec
       - /metatypes
@@ -73,5 +72,3 @@ modules:
       - type: archive
         url: https://github.com/emericg/toolBLEx/archive/refs/tags/v0.14.1.tar.gz
         sha256: 49bd4a8f861cb64ad9c7874ed359e35bcbbf45e394d017f098491bb181032d34
-    cleanup:
-      - /lib/debug
