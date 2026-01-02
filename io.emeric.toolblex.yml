@@ -1,7 +1,7 @@
 app-id: io.emeric.toolblex
-runtime: org.freedesktop.Platform
-runtime-version: '25.08'
-sdk: org.freedesktop.Sdk
+runtime: org.kde.Platform
+runtime-version: '6.10'
+sdk: org.kde.Sdk
 
 command: toolBLEx
 rename-desktop-file: toolBLEx.desktop
@@ -22,8 +22,11 @@ finish-args:
   - --system-talk-name=org.bluez
 
 cleanup:
+  - /bin/__pypache__
+  - /bin/rst*
   - /include
   - /lib/cmake
+  - /lib/cups
   - /lib/pkgconfig
   - /lib/python*
   - /share/doc
@@ -34,38 +37,6 @@ cleanup:
   - '*.la'
 
 modules:
-  - name: Qt6
-    buildsystem: cmake-ninja
-    builddir: true
-    config-opts:
-      - -DBUILD_SHARED_LIBS=ON
-      - -DQT_BUILD_SUBMODULES=qtbase;qtdeclarative;qttools;qtshadertools;qtwayland;qtsvg;qtconnectivity;qtcharts
-      - -DQT_QPA_PLATFORMS=wayland;xcb
-      - -DINPUT_openssl=linked
-    sources:
-      - type: archive
-        url: https://download.qt.io/archive/qt/6.10/6.10.1/single/qt-everywhere-src-6.10.1.tar.xz
-        sha256: 0ed08b079719394303cd2054b66b2dc0c5895ceeb88fb6131c18991c980bf00f
-        x-checker-data:
-          type: anitya
-          project-id: 7927
-          url-template: https://download.qt.io/archive/qt/$major.$minor/$version/single/qt-everywhere-src-$version.tar.xz
-    cleanup:
-      - /bin
-      - /doc
-      - /include
-      - /lib/objects-Release
-      - /libexec
-      - /metatypes
-      - /mkspecs
-      - /modules
-      - /plugins/assetimporters
-      - /plugins/designer
-      - /plugins/qmllint
-      - /plugins/qmltooling
-      - /qml
-      - /sbom
-
   - name: toolBLEx
     buildsystem: cmake-ninja
     sources:
