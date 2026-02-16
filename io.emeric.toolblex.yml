@@ -46,8 +46,8 @@ modules:
       - -DINPUT_openssl=linked
     sources:
       - type: archive
-        url: https://download.qt.io/archive/qt/6.10/6.10.1/single/qt-everywhere-src-6.10.1.tar.xz
-        sha256: 0ed08b079719394303cd2054b66b2dc0c5895ceeb88fb6131c18991c980bf00f
+        url: https://download.qt.io/archive/qt/6.10/6.10.2/single/qt-everywhere-src-6.10.2.tar.xz
+        sha256: c3df0f0e421130cc52ed81cb712358804471ce9bd2a41d97828f9f5b1bf7fed2
         x-checker-data:
           type: anitya
           project-id: 7927
@@ -71,5 +71,5 @@ modules:
     buildsystem: cmake-ninja
     sources:
       - type: archive
-        url: https://github.com/emericg/toolBLEx/archive/refs/tags/v0.14.1.tar.gz
-        sha256: 49bd4a8f861cb64ad9c7874ed359e35bcbbf45e394d017f098491bb181032d34
+        url: https://github.com/emericg/toolBLEx/archive/refs/tags/v0.15.tar.gz
+        sha256: bf496b2ed9f3aa1e3c5613fabb291bc7e7ac2cf17b49abefe47543e2197355ef
