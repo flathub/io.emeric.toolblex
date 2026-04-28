@@ -39,9 +39,11 @@ modules:
     builddir: true
     config-opts:
       - -DBUILD_SHARED_LIBS=ON
+      - -DBUILD_WITH_PCH=OFF
       - -DQT_BUILD_EXAMPLES_BY_DEFAULT=OFF
       - -DQT_BUILD_TESTS_BY_DEFAULT=OFF
-      - -DQT_BUILD_SUBMODULES=qtbase;qtdeclarative;qttools;qtshadertools;qtwayland;qtsvg;qtconnectivity;qtcharts
+      - -DQT_BUILD_SUBMODULES=qtbase;qtdeclarative;qtshadertools;qtwayland;qtsvg;qtconnectivity;qtcharts
+      - -DQT_FEATURE_glibc_fortify_source=OFF
       - -DQT_QPA_PLATFORMS=wayland;xcb
       - -DINPUT_openssl=linked
     sources:
@@ -56,7 +58,12 @@ modules:
       - /bin
       - /doc
       - /include
-      - /lib/objects-Release
+      - /lib/*.a
+      - /lib/*.la
+      - /lib/*.prl
+      - /lib/cmake
+      - /lib/mkspecs
+      - /lib/pkgconfig
       - /libexec
       - /metatypes
       - /mkspecs
