@@ -1,6 +1,6 @@
 app-id: io.emeric.toolblex
 runtime: org.freedesktop.Platform
-runtime-version: '25.08'
+runtime-version: '26.08'
 sdk: org.freedesktop.Sdk
 
 command: toolBLEx
@@ -190,5 +190,10 @@ modules:
     buildsystem: cmake-ninja
     sources:
       - type: archive
-        url: https://github.com/emericg/toolBLEx/archive/refs/tags/v0.17.tar.gz
-        sha256: 6cde3277bb9001e82531d61a55d6e5073d58d221e97824e7297e4eca4e2451de
+        url: https://github.com/emericg/toolBLEx/archive/refs/tags/v0.18.tar.gz
+        sha256: d2cc9bdecd497294f2c2e6dffb4a000fe087d3b143aae8d8995244946cb95739
+        x-checker-data:
+          is-main-source: true
+          type: github
+          repo: emericg/toolBLEx
+          source-archive: tarball
