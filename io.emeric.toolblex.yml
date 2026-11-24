@@ -1,6 +1,6 @@
 app-id: io.emeric.toolblex
 runtime: org.freedesktop.Platform
-runtime-version: '25.08'
+runtime-version: '26.08'
 sdk: org.freedesktop.Sdk
 
 command: toolBLEx
@@ -43,8 +43,8 @@ modules:
       - -DQT_BUILD_TESTS=OFF
     sources:
       - type: archive
-        url: https://download.qt.io/archive/qt/6.12/6.12.0/submodules/qtbase-everywhere-src-6.12.0.tar.xz
-        sha256: a951bd163c7b80fc6b8c88d7668fb56abf91c152373e13c10666763238131307
+        url: https://download.qt.io/archive/qt/6.12/6.12.1/submodules/qtbase-everywhere-src-6.12.1.tar.xz
+        sha256: cd837bb9fd631e20439a04eaa0c2f252f19ad92fdf5adf10229d0fbc2fab2d53
         x-checker-data:
           type: anitya
           project-id: 7927
@@ -62,8 +62,8 @@ modules:
       - -DQT_BUILD_TESTS=OFF
     sources:
       - type: archive
-        url: https://download.qt.io/archive/qt/6.12/6.12.0/submodules/qttools-everywhere-src-6.12.0.tar.xz
-        sha256: 8dab8f3611496486a470ad5f115ceea584f36bc22a2b8b6f6ebdbafbb8160693
+        url: https://download.qt.io/archive/qt/6.12/6.12.1/submodules/qttools-everywhere-src-6.12.1.tar.xz
+        sha256: 0d3d1a7eba32d1477f36211fb527c2c75f60cb10f3ddc41fdb804fd94147b640
         x-checker-data:
           type: anitya
           project-id: 7927
@@ -79,8 +79,8 @@ modules:
       - -DQT_BUILD_TESTS=OFF
     sources:
       - type: archive
-        url: https://download.qt.io/archive/qt/6.12/6.12.0/submodules/qtshadertools-everywhere-src-6.12.0.tar.xz
-        sha256: c7d84f436e1aaef39fdcadebf2bd71bdf24dc69497e13f2e0198873cbbfea2ab
+        url: https://download.qt.io/archive/qt/6.12/6.12.1/submodules/qtshadertools-everywhere-src-6.12.1.tar.xz
+        sha256: f8c5b9c91eca0927198918c537d1b4d515f96dc9a3b178a88a1ff1d2f85c7877
         x-checker-data:
           type: anitya
           project-id: 7927
@@ -96,8 +96,8 @@ modules:
       - -DQT_BUILD_TESTS=OFF
     sources:
       - type: archive
-        url: https://download.qt.io/archive/qt/6.12/6.12.0/submodules/qtdeclarative-everywhere-src-6.12.0.tar.xz
-        sha256: 311f3a2603e1973bb59baef9dfa740a376de713157d4782ee043681e889c9260
+        url: https://download.qt.io/archive/qt/6.12/6.12.1/submodules/qtdeclarative-everywhere-src-6.12.1.tar.xz
+        sha256: 91853e52d7ba958bfd85ea46b5efcf4a3b28b02e7bcd0e7c97a7b797ed6d1ecc
         x-checker-data:
           type: anitya
           project-id: 7927
@@ -112,8 +112,8 @@ modules:
       - -DQT_BUILD_TESTS=OFF
     sources:
       - type: archive
-        url: https://download.qt.io/archive/qt/6.12/6.12.0/submodules/qtsvg-everywhere-src-6.12.0.tar.xz
-        sha256: e4ab39534ec97987b1b9b60ef7f4d3253d5912a69f8c713a01753174a4029331
+        url: https://download.qt.io/archive/qt/6.12/6.12.1/submodules/qtsvg-everywhere-src-6.12.1.tar.xz
+        sha256: 6a7157a9a0556a129ae6582c7fbe57a0d6c0b83083cfcbd38d5d4a93b30c46e1
         x-checker-data:
           type: anitya
           project-id: 7927
@@ -128,8 +128,8 @@ modules:
       - -DQT_BUILD_TESTS=OFF
     sources:
       - type: archive
-        url: https://download.qt.io/archive/qt/6.12/6.12.0/submodules/qtconnectivity-everywhere-src-6.12.0.tar.xz
-        sha256: ed51f7f02c1f437fcf8a42940c7a84f6c0908c0ec7a4f5a5304fe68f47521954
+        url: https://download.qt.io/archive/qt/6.12/6.12.1/submodules/qtconnectivity-everywhere-src-6.12.1.tar.xz
+        sha256: e0319d2f365bc128b45b051ac9de54240279d26188256bb9b1e89d3a99f3be62
         x-checker-data:
           type: anitya
           project-id: 7927
@@ -144,8 +144,8 @@ modules:
       - -DQT_BUILD_TESTS=OFF
     sources:
       - type: archive
-        url: https://download.qt.io/archive/qt/6.12/6.12.0/submodules/qtquick3d-everywhere-src-6.12.0.tar.xz
-        sha256: 6ced6edbd25fb5a632fe770ae820b376bf50233e8d62002c79a69a505a2e429e
+        url: https://download.qt.io/archive/qt/6.12/6.12.1/submodules/qtquick3d-everywhere-src-6.12.1.tar.xz
+        sha256: 32ba7a637f05ae2e198b215a814a3945b6b9ddd3b5fafff2406436994ccc0843
         x-checker-data:
           type: anitya
           project-id: 7927
@@ -160,8 +160,8 @@ modules:
       - -DQT_BUILD_TESTS=OFF
     sources:
       - type: archive
-        url: https://download.qt.io/archive/qt/6.12/6.12.0/submodules/qtgraphs-everywhere-src-6.12.0.tar.xz
-        sha256: 18c4e968785447051d94b01f8e3c975e31ddc46065c0777443cecc50753a4d8c
+        url: https://download.qt.io/archive/qt/6.12/6.12.1/submodules/qtgraphs-everywhere-src-6.12.1.tar.xz
+        sha256: 41bf52c13ab64e69037604187ba8d20463b9d1db292d8e2ad89e1be04a14298d
         x-checker-data:
           type: anitya
           project-id: 7927
@@ -176,8 +176,8 @@ modules:
       - -DQT_BUILD_TESTS=OFF
     sources:
       - type: archive
-        url: https://download.qt.io/archive/qt/6.12/6.12.0/submodules/qtwayland-everywhere-src-6.12.0.tar.xz
-        sha256: ae14d9bcf1bb3c300a3ab2e6a53f50284e5c6c966a4ac4cc5aedcb1bc74e4d02
+        url: https://download.qt.io/archive/qt/6.12/6.12.1/submodules/qtwayland-everywhere-src-6.12.1.tar.xz
+        sha256: 226cafcfd3b8c009f178d157d0772f902f6ee693ee39d219aba50eef0473c143
         x-checker-data:
           type: anitya
           project-id: 7927
@@ -190,5 +190,10 @@ modules:
     buildsystem: cmake-ninja
     sources:
       - type: archive
-        url: https://github.com/emericg/toolBLEx/archive/refs/tags/v0.17.tar.gz
-        sha256: 6cde3277bb9001e82531d61a55d6e5073d58d221e97824e7297e4eca4e2451de
+        url: https://github.com/emericg/toolBLEx/archive/refs/tags/v0.18.tar.gz
+        sha256: d2cc9bdecd497294f2c2e6dffb4a000fe087d3b143aae8d8995244946cb95739
+        x-checker-data:
+          is-main-source: true
+          type: github
+          repo: emericg/toolBLEx
+          source-archive: tarball
