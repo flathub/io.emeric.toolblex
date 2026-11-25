@@ -196,4 +196,5 @@ modules:
           is-main-source: true
           type: github
           repo: emericg/toolBLEx
+          include-prereleases: true
           source-archive: tarball
