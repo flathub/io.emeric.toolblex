@@ -190,8 +190,8 @@ modules:
     buildsystem: cmake-ninja
     sources:
       - type: archive
-        url: https://github.com/emericg/toolBLEx/archive/refs/tags/v0.18.tar.gz
-        sha256: d2cc9bdecd497294f2c2e6dffb4a000fe087d3b143aae8d8995244946cb95739
+        url: https://api.github.com/repos/emericg/toolBLEx/tarball/v0.18
+        sha256: 551df86d2be8055da3c3e6a27da245ed6456c5d7e64bd434f2c47655d5f69058
         x-checker-data:
           is-main-source: true
           type: github
